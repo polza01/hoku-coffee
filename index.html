@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#1b100b">
+  <title>HOKU — спешелті кава в зернах із 7 країн світу</title>
+  <meta name="description" content="HOKU — навчальний каталог спешелті кави в зернах з Ефіопії, Колумбії, Гондурасу, Кенії, Коста-Рики, Руанди та Бразилії. Відкрий свій смак.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HOKU Specialty Coffee">
+  <meta property="og:title" content="HOKU — смак з інших широт">
+  <meta property="og:description" content="Сім країн походження, сім характерів. Навчальний проєкт specialty coffee.">
+  <meta property="og:image" content="assets/img/bag-ethiopia.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <!-- Style compiled in the original Freeframe Roast template; HOKU overrides are below. -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/hoku.css">
+  <script src="assets/js/hoku.js" defer></script>
+  <script src="assets/js/recipes.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip" href="#main">Перейти до вмісту</a>
+  <header class="site-header" id="top">
+    <div class="container-x wrap header-inner flex items-center justify-between">
+      <a class="logo" href="#top" aria-label="HOKU — головна"><img src="assets/img/hoku-brush.png" alt="HOKU" width="104" height="80"></a>
+      <nav id="main-nav" class="main-nav" aria-label="Головне меню">
+        <a href="#coffee">Кава</a><a href="#recipes">Рецепти</a><a href="#origins">Про нас</a><a href="#choose">Як обрати</a><a href="#contact">Контакти</a>
+      </nav>
+      <div class="header-actions">
+        <span class="lang-tag" aria-label="Мова сайту: українська">UA</span>
+        <button type="button" id="cart-toggle" class="cart-button" aria-label="Відкрити кошик" aria-controls="cart-panel" aria-expanded="false">Кошик <span id="cart-count" class="cart-counter" aria-live="polite">0</span></button>
+      </div>
+      <button class="mobile-nav-button" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Відкрити меню"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-photo" role="img" aria-label="Темно-коричневе матове пакування кави HOKU Ethiopia на камені"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container-x wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow orange">HOKU / SPECIALTY COFFEE / SINGLE ORIGIN</p>
+          <h1 id="hero-heading">СМАК<br>З ІНШИХ<br><em>ШИРОТ.</em><span class="hero-seo-keyphrase">СПЕШЕЛТІ КАВА В ЗЕРНАХ</span></h1>
+          <p class="lead">Спешелті кава з різних регіонів світу. Відкрий характер кожного походження — від квіткової Ефіопії до шоколадної Бразилії.</p>
+          <div class="hero-buttons"><a href="#coffee" class="button button-primary" id="hero-shop">До каталогу <span aria-hidden="true">↗</span></a><a href="#origins" class="text-button">Дізнатися про HOKU <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </div>
+      <div class="hero-edge"><span>01 / 07</span><span>КАВА ЗІ СВОЇМ ХАРАКТЕРОМ</span></div>
+    </section>
+
+    <section id="origins" class="story" aria-labelledby="origin-heading">
+      <div class="container-x wrap story-grid">
+        <div class="story-title"><p class="eyebrow">ПОХОДЖЕННЯ МАЄ ЗНАЧЕННЯ</p><h2 id="origin-heading"><strong>7</strong> регіонів.<br><span>7 характерів.</span></h2></div>
+        <div class="story-aside"><p>В одній чашці — ягоди та квіти. В іншій — горіхи, какао й карамель. Країна, обробка та обсмаження змінюють смак. Ми зібрали сім напрямків, щоб було цікавіше шукати свій.</p><a href="#choose" class="under-link">Як обрати каву <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="catalog section-dark" id="coffee" aria-labelledby="catalog-heading">
+      <div class="container-x wrap">
+        <div class="section-head"><div><p class="eyebrow orange">01 / КОЛЕКЦІЯ HOKU</p><h2 id="catalog-heading">ОДНЕ ПОХОДЖЕННЯ.<br><span>СПРАВЖНІЙ СМАК.</span></h2></div><p class="section-intro">Сім країн, сім різних смакових профілів. Знайди зерно під свій спосіб заварювання.</p></div>
+        <div class="filters" id="filters" role="group" aria-label="Фільтрувати каву за смаковим профілем">
+          <button type="button" class="filter active" data-filter="all" aria-pressed="true">Усі сорти <span>07</span></button>
+          <button type="button" class="filter" data-filter="fruit" aria-pressed="false">Фруктові</button>
+          <button type="button" class="filter" data-filter="balanced" aria-pressed="false">Збалансовані</button>
+          <button type="button" class="filter" data-filter="chocolate" aria-pressed="false">Шоколадні</button>
+        </div>
+        <p class="sr-only" id="filter-result" aria-live="polite"></p>
+        <div class="product-grid" id="product-grid"></div>
+        <p class="catalog-note">* Продукти, дегустаційні описи та ціни — демонстраційні. Це навчальний проєкт: справжні замовлення не приймаються.</p>
+      </div>
+    </section>
+
+    <section class="manifesto" id="choose" aria-labelledby="choose-heading">
+      <div class="container-x wrap manifesto-inner">
+        <div><p class="eyebrow">02 / СМАКОВИЙ ОРІЄНТИР</p><h2 id="choose-heading">ЗНАЙДИ<br>СВІЙ <span>СМАК.</span></h2></div>
+        <div><p>Яскраві ягоди та квіти? Почни з Ефіопії або Кенії. М’яка солодкість та баланс? Спробуй Колумбію, Руанду чи Гондурас. Любиш шоколад і горіхи — зверни увагу на Бразилію.</p><a class="button button-dark" href="#coffee">Обрати зерно <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+
+    <section id="recipes" class="brew-section" aria-labelledby="brew-heading">
+      <div class="container-x wrap">
+        <div class="brew-header">
+          <div><p class="eyebrow orange">03 / BREW GUIDES BY HOKU</p><h2 id="brew-heading">ЗАВАРЮЙ.<br><span>ВІДЧУВАЙ.</span></h2></div>
+          <p>У кожного зерна — свій характер. Обери девайс, відміряй каву й воду та повторюй кроки. Усі рецепти — для зерна HOKU й домашнього заварювання.</p>
+        </div>
+        <div class="brew-tabs" role="tablist" aria-label="Спосіб заварювання">
+          <button type="button" class="brew-tab is-active" role="tab" id="brew-tab-aeropress" aria-controls="brew-panel-aeropress" aria-selected="true" tabindex="0"><span>01</span> AEROPRESS <span class="brew-tab-arrow" aria-hidden="true">↗</span></button>
+          <button type="button" class="brew-tab" role="tab" id="brew-tab-v60" aria-controls="brew-panel-v60" aria-selected="false" tabindex="-1"><span>02</span> V60 <span class="brew-tab-arrow" aria-hidden="true">↗</span></button>
+          <button type="button" class="brew-tab" role="tab" id="brew-tab-french" aria-controls="brew-panel-french" aria-selected="false" tabindex="-1"><span>03</span> FRENCH PRESS <span class="brew-tab-arrow" aria-hidden="true">↗</span></button>
+          <button type="button" class="brew-tab" role="tab" id="brew-tab-cold" aria-controls="brew-panel-cold" aria-selected="false" tabindex="-1"><span>04</span> COLD BREW <span class="brew-tab-arrow" aria-hidden="true">↗</span></button>
+        </div>
+<article class="brew-panel" role="tabpanel" id="brew-panel-aeropress" aria-labelledby="brew-tab-aeropress" tabindex="0"  >
+      <div class="brew-panel-top">
+        <div class="brew-intro"><span class="brew-edition">HOKU BREW GUIDE / 01—04</span><p class="eyebrow orange">СОЛОДКІСТЬ І БАЛАНС</p><h3>AEROPRESS<span>.</span></h3><p class="brew-subtitle">Насичено, солодко, без зайвих рухів.</p><p class="brew-grind"><span>ПОМЕЛ</span> Середньо-дрібний</p></div>
+        <dl class="brew-metrics"><div class="brew-metric"><dt>ЗЕРНО</dt><dd>16 <small>г</small></dd></div>
+<div class="brew-metric"><dt>ВОДА</dt><dd>240 <small>г</small></dd></div>
+<div class="brew-metric"><dt>РАТІО</dt><dd>1:15</dd></div>
+<div class="brew-metric"><dt>ТЕМПЕРАТУРА</dt><dd>92°C</dd></div>
+<div class="brew-metric"><dt>ЧАС</dt><dd>2:15</dd></div></dl>
+      </div>
+      <div class="brew-panel-bottom">
+        <div class="brew-instructions"><h4>КРОК ЗА КРОКОМ <span> / 05</span></h4><ol class="brew-steps"><li><span class="brew-step-time">ПІДГОТОВКА</span><p>Промий паперовий фільтр, закрути кришку й постав AeroPress на стійку чашку. Засип <b>16 г</b> свіжозмеленої кави.</p></li>
+<li><span class="brew-step-time">00:00</span><p>Залий <b>50 г води</b> температурою 92°C. Злегка перемішай 2–3 рази, щоб змочити всю каву.</p></li>
+<li><span class="brew-step-time">00:20</span><p>Долий воду до <b>240 г загалом</b>. Встав поршень приблизно на 1 см, щоб зменшити протікання.</p></li>
+<li><span class="brew-step-time">01:40</span><p>Повільно натискай на поршень протягом <b>30–35 секунд</b>. Не тисни різко.</p></li>
+<li><span class="brew-step-time">02:15</span><p>Зніми AeroPress, обережно перемішай напій у чашці й спробуй.</p></li></ol></div>
+        <aside class="brew-pairings"><p class="eyebrow orange">HOKU / РАДИМО СПРОБУВАТИ</p><h4>ЗЕРНО ПІД<br>ЦЕЙ СПОСІБ.</h4><p>Швидкий спосіб, який підкреслює солодкість і робить чашку щільнішою. Для HOKU це хороший старт із Колумбії, Руанди або Гондурасу.</p><div class="brew-origin-pills"><a href="#coffee" class="brew-origin-pill" aria-label="Перейти до каталогу: Колумбія">Колумбія <span aria-hidden="true">↗</span></a><a href="#coffee" class="brew-origin-pill" aria-label="Перейти до каталогу: Руанда">Руанда <span aria-hidden="true">↗</span></a><a href="#coffee" class="brew-origin-pill" aria-label="Перейти до каталогу: Гондурас">Гондурас <span aria-hidden="true">↗</span></a></div><div class="brew-note"><span class="brew-note-icon" aria-hidden="true">↗</span><div><strong>МАЛЕНЬКА ПОРАДА</strong><p>Занадто кисло? Спробуй трохи дрібніший помел. Гірко й важко? Зроби помел крупнішим.</p></div></div></aside>
+      </div>
+    </article>
+<article class="brew-panel" role="tabpanel" id="brew-panel-v60" aria-labelledby="brew-tab-v60" tabindex="0" hidden>
+      <div class="brew-panel-top">
+        <div class="brew-intro"><span class="brew-edition">HOKU BREW GUIDE / 02—04</span><p class="eyebrow orange">ЯГОДИ ТА КВІТИ</p><h3>V60<span>.</span></h3><p class="brew-subtitle">Чиста чашка й максимум деталей смаку.</p><p class="brew-grind"><span>ПОМЕЛ</span> Середній, ближче до дрібного</p></div>
+        <dl class="brew-metrics"><div class="brew-metric"><dt>ЗЕРНО</dt><dd>18 <small>г</small></dd></div>
+<div class="brew-metric"><dt>ВОДА</dt><dd>300 <small>г</small></dd></div>
+<div class="brew-metric"><dt>РАТІО</dt><dd>1:16,7</dd></div>
+<div class="brew-metric"><dt>ТЕМПЕРАТУРА</dt><dd>94°C</dd></div>
+<div class="brew-metric"><dt>ЧАС</dt><dd>2:45–3:15</dd></div></dl>
+      </div>
+      <div class="brew-panel-bottom">
+        <div class="brew-instructions"><h4>КРОК ЗА КРОКОМ <span> / 05</span></h4><ol class="brew-steps"><li><span class="brew-step-time">ПІДГОТОВКА</span><p>Встав паперовий фільтр у V60, промий гарячою водою й злий її. Засип <b>18 г</b> кави, вирівняй шар.</p></li>
+<li><span class="brew-step-time">00:00</span><p>Почни таймер. Повільно влий <b>60 г води</b>, змочи весь помел. Залиш на цвітіння до 00:40.</p></li>
+<li><span class="brew-step-time">00:40</span><p>Коловими рухами долий воду до позначки <b>180 г загалом</b>, не лий прямо на паперові стінки.</p></li>
+<li><span class="brew-step-time">01:15</span><p>Долий до <b>300 г загалом</b>. Легко похитай воронку, щоб поверхня кави стала рівнішою.</p></li>
+<li><span class="brew-step-time">02:45–03:15</span><p>Дочекайся завершення протікання. Зніми V60 і перемішай готову каву в сервері.</p></li></ol></div>
+        <aside class="brew-pairings"><p class="eyebrow orange">HOKU / РАДИМО СПРОБУВАТИ</p><h4>ЗЕРНО ПІД<br>ЦЕЙ СПОСІБ.</h4><p>V60 допомагає краще відчути квіткові й фруктові ноти. Обирай Ефіопію, Кенію або Коста-Рику з колекції HOKU.</p><div class="brew-origin-pills"><a href="#coffee" class="brew-origin-pill" aria-label="Перейти до каталогу: Ефіопія">Ефіопія <span aria-hidden="true">↗</span></a><a href="#coffee" class="brew-origin-pill" aria-label="Перейти до каталогу: Кенія">Кенія <span aria-hidden="true">↗</span></a><a href="#coffee" class="brew-origin-pill" aria-label="Перейти до каталогу: Коста-Рика">Коста-Рика <span aria-hidden="true">↗</span></a></div><div class="brew-note"><span class="brew-note-icon" aria-hidden="true">↗</span><div><strong>МАЛЕНЬКА ПОРАДА</strong><p>Пролив триває менш як 2:30? Трохи зменш помел. Понад 3:45? Зроби помел крупнішим.</p></div></div></aside>
+      </div>
+    </article>
+<article class="brew-panel" role="tabpanel" id="brew-panel-french" aria-labelledby="brew-tab-french" tabindex="0" hidden>
+      <div class="brew-panel-top">
+        <div class="brew-intro"><span class="brew-edition">HOKU BREW GUIDE / 03—04</span><p class="eyebrow orange">ШОКОЛАД І ГОРІХИ</p><h3>FRENCH PRESS<span>.</span></h3><p class="brew-subtitle">Більше тіла, більше текстури, менше метушні.</p><p class="brew-grind"><span>ПОМЕЛ</span> Крупний</p></div>
+        <dl class="brew-metrics"><div class="brew-metric"><dt>ЗЕРНО</dt><dd>30 <small>г</small></dd></div>
+<div class="brew-metric"><dt>ВОДА</dt><dd>450 <small>г</small></dd></div>
+<div class="brew-metric"><dt>РАТІО</dt><dd>1:15</dd></div>
+<div class="brew-metric"><dt>ТЕМПЕРАТУРА</dt><dd>94°C</dd></div>
+<div class="brew-metric"><dt>ЧАС</dt><dd>4:30–5:00</dd></div></dl>
+      </div>
+      <div class="brew-panel-bottom">
+        <div class="brew-instructions"><h4>КРОК ЗА КРОКОМ <span> / 05</span></h4><ol class="brew-steps"><li><span class="brew-step-time">ПІДГОТОВКА</span><p>Прогрій колбу теплою водою, злий її. Додай <b>30 г</b> кави крупного помелу.</p></li>
+<li><span class="brew-step-time">00:00</span><p>Рівномірно залий <b>450 г води</b> температурою 94°C. Переконайся, що весь помел намок.</p></li>
+<li><span class="brew-step-time">00:15</span><p>Обережно перемішай 2–3 рази. Накрий кришкою, але поки не опускай сітку.</p></li>
+<li><span class="brew-step-time">04:00</span><p>Ложкою злегка розбий верхній шар кави. За бажанням прибери піну з поверхні.</p></li>
+<li><span class="brew-step-time">04:30–05:00</span><p>Повільно опусти поршень і одразу перелий каву в чашки або сервер, щоб вона не настоювалася далі.</p></li></ol></div>
+        <aside class="brew-pairings"><p class="eyebrow orange">HOKU / РАДИМО СПРОБУВАТИ</p><h4>ЗЕРНО ПІД<br>ЦЕЙ СПОСІБ.</h4><p>Френч-прес створює щільний напій із виразною текстурою. Особливо пасує до Бразилії, Гондурасу й Колумбії.</p><div class="brew-origin-pills"><a href="#coffee" class="brew-origin-pill" aria-label="Перейти до каталогу: Бразилія">Бразилія <span aria-hidden="true">↗</span></a><a href="#coffee" class="brew-origin-pill" aria-label="Перейти до каталогу: Гондурас">Гондурас <span aria-hidden="true">↗</span></a><a href="#coffee" class="brew-origin-pill" aria-label="Перейти до каталогу: Колумбія">Колумбія <span aria-hidden="true">↗</span></a></div><div class="brew-note"><span class="brew-note-icon" aria-hidden="true">↗</span><div><strong>МАЛЕНЬКА ПОРАДА</strong><p>Занадто багато осаду? Дай каві постояти ще 30 секунд і переливай без різких рухів.</p></div></div></aside>
+      </div>
+    </article>
+<article class="brew-panel" role="tabpanel" id="brew-panel-cold" aria-labelledby="brew-tab-cold" tabindex="0" hidden>
+      <div class="brew-panel-top">
+        <div class="brew-intro"><span class="brew-edition">HOKU BREW GUIDE / 04—04</span><p class="eyebrow orange">ДОВГЕ ХОЛОДНЕ НАСТОЮВАННЯ</p><h3>COLD BREW<span>.</span></h3><p class="brew-subtitle">Мʼякий холодний смак без поспіху.</p><p class="brew-grind"><span>ПОМЕЛ</span> Дуже крупний</p></div>
+        <dl class="brew-metrics"><div class="brew-metric"><dt>ЗЕРНО</dt><dd>55 <small>г</small></dd></div>
+<div class="brew-metric"><dt>ВОДА</dt><dd>660 <small>г</small></dd></div>
+<div class="brew-metric"><dt>РАТІО</dt><dd>1:12</dd></div>
+<div class="brew-metric"><dt>ТЕМПЕРАТУРА</dt><dd>4–6°C</dd></div>
+<div class="brew-metric"><dt>ЧАС</dt><dd>16–18 год</dd></div></dl>
+      </div>
+      <div class="brew-panel-bottom">
+        <div class="brew-instructions"><h4>КРОК ЗА КРОКОМ <span> / 05</span></h4><ol class="brew-steps"><li><span class="brew-step-time">ПІДГОТОВКА</span><p>Змели <b>55 г</b> кави дуже крупно. Підготуй чисту ємність із кришкою обʼємом щонайменше 1 л.</p></li>
+<li><span class="brew-step-time">00:00</span><p>Засип каву в ємність, додай <b>660 г питної води</b>, акуратно перемішай, щоб не залишилось сухих грудочок.</p></li>
+<li><span class="brew-step-time">00:05</span><p>Закрий ємність і постав у холодильник за температури <b>4–6°C</b> на 16–18 годин.</p></li>
+<li><span class="brew-step-time">16–18 ГОД</span><p>Проціди напій спочатку через сито, потім через паперовий фільтр для чистішого результату.</p></li>
+<li><span class="brew-step-time">ПОДАЧА</span><p>Налий у склянку з льодом. Рецепт уже підходить для пиття без розведення; за бажанням додай трохи води.</p></li></ol></div>
+        <aside class="brew-pairings"><p class="eyebrow orange">HOKU / РАДИМО СПРОБУВАТИ</p><h4>ЗЕРНО ПІД<br>ЦЕЙ СПОСІБ.</h4><p>Холодне настоювання часто дає мʼякий, солодкуватий напій. Почни з Бразилії, Руанди або Коста-Рики.</p><div class="brew-origin-pills"><a href="#coffee" class="brew-origin-pill" aria-label="Перейти до каталогу: Бразилія">Бразилія <span aria-hidden="true">↗</span></a><a href="#coffee" class="brew-origin-pill" aria-label="Перейти до каталогу: Руанда">Руанда <span aria-hidden="true">↗</span></a><a href="#coffee" class="brew-origin-pill" aria-label="Перейти до каталогу: Коста-Рика">Коста-Рика <span aria-hidden="true">↗</span></a></div><div class="brew-note"><span class="brew-note-icon" aria-hidden="true">↗</span><div><strong>МАЛЕНЬКА ПОРАДА</strong><p>Якщо напій занадто інтенсивний, додай холодної води. Готовий cold brew зберігай у холодильнику та вживай свіжим.</p></div></div></aside>
+      </div>
+    </article>
+        <p class="brew-disclaimer">Це стартові рецепти для навчальної лінійки HOKU. Смак змінюється залежно від зерна, обсмаження, води й помелу — налаштовуй рецепт під свою чашку. Грамовки води вказані як загальна маса, не додаткова порція.</p>
+      </div>
+    </section>
+
+    <section class="origin-feature" aria-labelledby="feature-title">
+      <div class="origin-feature-photo" role="img" aria-label="Кавовий ландшафт у теплих вечірніх кольорах"></div>
+      <div class="origin-feature-content"><p class="eyebrow orange">03 / ФІЛОСОФІЯ HOKU</p><h2 id="feature-title">ЗЕРНО МАЄ<br>ІСТОРІЮ.</h2><p>Висота вирощування, сорт, спосіб обробки, обсмаження — за кожною пачкою є свій маршрут. HOKU — навчальний бренд, який знайомить із різноманіттям specialty coffee без зайвих обіцянок.</p><a href="#coffee" class="under-link light">Переглянути колекцію ↗</a></div>
+    </section>
+
+    <section class="demo-banner" aria-label="Інформація про демонстраційну покупку"><div class="container-x wrap demo-inner"><div><p class="eyebrow orange">04 / НАВЧАЛЬНИЙ ПРОЄКТ</p><h2>СПРОБУЙ<br>ДЕМОЗАМОВЛЕННЯ.</h2></div><div><p>Додай пачку в кошик та пройди тестовий шлях оформлення. Ми не приймаємо платежі й не запитуємо адресу чи банківські дані.</p><a href="#coffee" class="button button-primary">Перейти до кави ↗</a></div></div></section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container-x wrap footer-main">
+      <div><a href="#top" class="footer-logo" aria-label="HOKU — нагору"><img src="assets/img/hoku-brush.png" width="150" height="116" alt="HOKU"></a><p>Сім регіонів. Сім характерів.<br>Одна любов до кави.</p></div>
+      <div class="footer-meta"><p class="eyebrow orange">НАВІГАЦІЯ</p><a href="#coffee">Каталог</a><a href="#recipes">Рецепти</a><a href="#origins">Наш підхід</a><a href="#choose">Як обрати</a><a href="#top">Нагору ↑</a></div>
+    </div>
+    <div class="container-x wrap"><p class="required-notice">Увага! Цей веб-сайт є навчальним проєктом, створеним виключно з освітньою метою в межах навчального курсу. Сайт не здійснює комерційної діяльності, не надає платних послуг і не призначений для отримання прибутку.</p><div class="footer-bottom"><span>© 2026 HOKU / НАВЧАЛЬНИЙ ПРОЄКТ · Burenko Polina · <a href="https://freeframe.dev/templates/roast" target="_blank" rel="noopener noreferrer">Основа: Roast від Freeframe</a></span><a href="#top">Нагору ↑</a></div></div>
+  </footer>
+
+  <div id="cart-backdrop" class="cart-backdrop" hidden></div>
+  <aside id="cart-panel" class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+    <div class="cart-top"><h2 id="cart-title">ТВІЙ КОШИК</h2><button id="cart-close" class="icon-button" aria-label="Закрити кошик" type="button">×</button></div>
+    <p class="cart-demonstration">Це навчальний кошик. Замовлення й оплату не проводимо.</p>
+    <div id="cart-list" class="cart-list"></div>
+    <div class="cart-bottom"><div class="cart-total"><span>Разом</span><strong id="cart-total">0 ₴</strong></div><button id="checkout" class="button button-primary" type="button">Почати тестове оформлення ↗</button><p class="cart-safe">Для тестування не потрібні особисті дані.</p></div>
+  </aside>
+  <div id="checkout-backdrop" class="modal-backdrop" hidden>
+    <section class="checkout-dialog" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+      <button id="checkout-close" class="icon-button checkout-close" type="button" aria-label="Закрити тестове оформлення">×</button>
+      <p class="eyebrow orange">НАВЧАЛЬНА ВОРОНКА</p><h2 id="checkout-title">ТЕСТОВА ЗАЯВКА</h2><p id="checkout-description">Це лише завершальний крок демонстраційного замовлення. Гроші не списуються, контактні та платіжні дані не збираються.</p>
+      <button class="button button-primary" id="finish-checkout" type="button">Завершити тестову заявку ↗</button>
+    </section>
+  </div>
+  <div class="modal-backdrop" id="details-backdrop" hidden>
+    <section class="details-dialog" role="dialog" aria-modal="true" aria-labelledby="details-title">
+      <button id="details-close" class="icon-button details-close" type="button" aria-label="Закрити інформацію про каву">×</button>
+      <div class="details-image"><img id="details-photo" src="assets/img/bag-ethiopia.webp" alt="Пакування кави HOKU" width="360" height="450"></div>
+      <div class="details-info"><p class="eyebrow orange">SINGLE ORIGIN / 250 G</p><h2 id="details-title">ETHIOPIA</h2><p id="details-notes"></p><dl id="details-meta"></dl><p id="details-description"></p><p class="details-hint">Профіль є прикладом для навчального каталогу, а не описом реального лота.</p><div class="details-actions"><strong id="details-price">420 ₴</strong><button type="button" class="button button-primary" id="details-add">До кошика +</button></div></div>
+    </section>
+  </div>
+  <div id="toast" role="status" aria-live="polite" class="toast"></div>
+</body>
+</html>
